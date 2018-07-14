@@ -3,5 +3,9 @@
 .tmp
 .idea
 .vscode/user_data_dir
+<<<<<<< HEAD
 index.html
+=======
+./index.html
+>>>>>>> f016e6557447add9f2e06b77ed7f7c3fa81cb1de
 package-lock.json
