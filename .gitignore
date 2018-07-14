@@ -1,0 +1,7 @@
+/node_modules
+/css
+.tmp
+.idea
+.vscode/user_data_dir
+index.html
+package-lock.json
