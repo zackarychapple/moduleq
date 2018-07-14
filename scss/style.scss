@@ -308,6 +308,8 @@ a {
     max-width: 900px;
     position: relative;
     line-height: 34px;
+    margin: 0 auto 30px;
+
     &:after {
       position: absolute;
       content: '';
@@ -440,12 +442,47 @@ a {
   width: 150px;
 }
 
+.w-370 {
+  width: 370px;
+}
+
+.mt {
+  margin-top: 35px;
+}
+
+.col-50 {
+  width: 50%;
+}
+
 .mr-20 {
   margin-right: 20px!important;
 }
 
 .text-center {
   text-align: center;
+}
+
+.immediate-insights {
+  position: absolute;
+  width: 1100px;
+  right: -330px;
+  top: -70px;
+  z-index: -1;
+}
+
+.people-facing {
+  position: absolute;
+  width: 760px;
+  top: -225px;
+  left: -135px;
+  z-index: -1;
+
+  img + img {
+    position: absolute;
+    top: 665px;
+    width: 152px;
+    left: 160px;
+  }
 }
 
 /* HELPER CLASSES END*/
