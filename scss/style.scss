@@ -1,15 +1,3 @@
-//TODO: remove this styles start
-.test-image-block {
-  height: 490px;
-  width: 250px;
-  background: red;
-  position: absolute;
-  right: 20px;
-}
-
-//TODO: remove this styles end
-
-
 $color-grass: #74c26c;
 $color-royal: #3F4A8F;
 $color-indigo: #2D3975;
@@ -55,6 +43,7 @@ body {
   font-size: 18px;
   min-width: 320px;
   font-family: Proxima, sans-serif;
+  max-width: 100%;
 }
 
 ul {
@@ -76,10 +65,17 @@ a {
   flex-grow: 1;
 }
 
+.page-wrapper {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1210px;
   padding: 0 110px;
   margin: 0 auto;
+  @media (max-width: 1200px) {
+    padding: 0 75px;
+  }
   &_z-index {
     z-index: 5;
     position: relative;
@@ -88,9 +84,12 @@ a {
 
 .h1 {
   color: #fff;
-  font-size: 62px;
+  font-size: 70px;
   margin: 10px 0;
   font-family: sans-serif;
+  @media (max-width: 1200px) {
+    font-size: 62px;
+  }
 }
 
 
@@ -98,12 +97,13 @@ a {
   color: #fff;
   font-size: 27px;
   line-height: 45px;
+  @media (max-width: 1200px) {
+    font-size: 22px;
+    line-height: 36px;
+  }
 }
 
 .header {
-  // background: url('../images/MOD-businessinfo-hero.png') bottom center;
-  // min-height: 100vh;
-  // background-size: cover;
   &__outer {
     position: relative;
   }
@@ -137,6 +137,11 @@ a {
     position: relative;
     padding-left: 10px;
   }
+  &__phone-image {
+    @media (max-width: 1200px) {
+      width: 220px;
+    }
+  }
 }
 
 .menu {
@@ -145,6 +150,9 @@ a {
     position: relative;
     padding-left: 32px;
     font-family: Proxima, sans-serif;
+    @media (max-width: 1200px) {
+      padding-left: 20px;
+    }
     &:after {
       content: '';
       position: absolute;
@@ -153,6 +161,9 @@ a {
       background: #fff;
       left: 15px;
       top: 4px;
+      @media (max-width: 1200px) {
+        left: 8px;
+      }
     }
     &:first-child {
       &:after {
@@ -219,7 +230,7 @@ a {
 }
 
 .section {
-  margin-top: 144px;
+  margin-top: 130px;
   position: relative;
   &_padding {
     padding-top: 144px;
@@ -235,6 +246,11 @@ a {
     font-size: 41px;
     font-family: ProximaBold, sans-serif;
     margin-bottom: 15px;
+    &_small {
+      font-family: Proxima;
+      max-width: 740px;
+      margin: 0 auto;
+    }
   }
   &__subheading {
     font-family: Proxima, sans-serif;
@@ -243,6 +259,28 @@ a {
     font-size: 21px;
     line-height: 33px;
     text-align: center;
+    &_small {
+      font-size: 18px;
+    }
+  }
+  &__strong {
+    font-weight: 800;
+    font-family: ProximaBold;
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    max-width: 900px;
+    position: relative;
+    line-height: 34px;
+    &:after {
+      position: absolute;
+      content: '';
+      background: url(../images/svg/MOD-Website-Components-R1_homepage-quote-icon.svg) no-repeat;
+      width: 12%;
+      top: -100px;
+      right: -67px;
+      height: 130px;
+    }
   }
   &__rows {
     margin-top: 97px;
@@ -283,14 +321,21 @@ a {
 }
 
 .blocks {
+  &__col {
+    position: relative;
+  }
   &__row {
     display: flex;
     margin-bottom: 39px;
-    &_inverse {
+    &:nth-child(even) {
       flex-direction: row-reverse;
       .blocks {
         &__title {
           text-align: right;
+        }
+        &__image {
+          margin-right: 50px;
+          margin-left: 0;
         }
       }
     }
@@ -338,6 +383,10 @@ a {
   margin-right: 20px!important;
 }
 
+.text-center {
+  text-align: center;
+}
+
 /* HELPER CLASSES END*/
 
 
@@ -355,6 +404,41 @@ a {
   top: 5%;
   left: 0;
   opacity: 0.7;
+}
+
+.img-footer-patern {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  top: -100%;
+}
+
+.img-valuable-content {
+  position: absolute;
+  top: -20%;
+  left: 0;
+  width: 1000px;
+  z-index: -1;
+}
+
+.img-understand-work {
+  position: absolute;
+  top: -100%;
+  right: 0;
+  width: 1000px;
+  z-index: -1;
+}
+
+.img-hp-step1 {
+  &:after {
+    content: '';
+    width: 200px;
+    height: 149px;
+    position: absolute;
+    top: -50%;
+    left: 0;
+    background: url(../images/svg/MOD-Website-Components-R1_homepage-step1-icon.svg);
+  }
 }
 
 /*IMG CLASSES END*/
