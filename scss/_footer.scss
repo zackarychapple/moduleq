@@ -1,0 +1,41 @@
+.footer {
+  &__wrapper {
+    color: #fff;
+  }
+
+  &__content {
+    padding: 130px 0 160px;
+    background-size: cover;
+    background-position-x: 40%;
+    background-repeat: no-repeat;
+    background-image: url("/images/svg/MOD-Website-Components-R1_footer-top.svg");
+  }
+
+  &__social-share {
+    margin-bottom: 40px;
+
+    a {
+      margin-right: 25px;
+
+      img {
+        width: 33.5px;
+        height: 33.5px;
+      }
+    }
+  }
+
+  &__info {
+    font-size: 21px;
+  }
+
+  &__copyright {
+    padding: 35px 0;
+    background-color: #2d3975;
+
+    p {
+      padding: 0;
+      margin: 0;
+      font-size: 18px;
+    }
+  }
+}
