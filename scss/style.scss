@@ -80,6 +80,10 @@ a {
   max-width: 1210px;
   padding: 0 110px;
   margin: 0 auto;
+  &_z-index {
+    z-index: 5;
+    position: relative;
+  }
 }
 
 .h1 {
@@ -215,7 +219,16 @@ a {
 }
 
 .section {
-  margin-top: 120px;
+  margin-top: 144px;
+  position: relative;
+  &_padding {
+    padding-top: 144px;
+    margin-top: 0;
+    background: linear-gradient(to bottom, #f8f8f6 0%, #f2f2f4 74%, #f2f2f4 75%, #fff 100%);
+  }
+  &_half-grey {
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #f8f8f6 51%, #f8f8f6 100%);
+  }
   &__heading {
     color: $color-royal;
     text-align: center;
@@ -231,12 +244,119 @@ a {
     line-height: 33px;
     text-align: center;
   }
+  &__rows {
+    margin-top: 97px;
+  }
   &__row {
     display: flex;
+    margin: 0 auto 75px;
+    max-width: 815px;
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+      .section__icon {
+        margin-right: 0;
+        margin-left: 50px;
+      }
+    }
   }
   &__col {
 
   }
+  &__icon {
+    margin-right: 50px;
+  }
+  &__title {
+    text-transform: uppercase;
+    color: $color-grass;
+    font-family: ProximaBold;
+    font-size: 21px;
+  }
+  &__text {
+    font-family: Proxima;
+    margin-top: 5px;
+    p {
+      margin-top: 0;
+      line-height: 30px
+    }
+  }
 }
+
+.blocks {
+  &__row {
+    display: flex;
+    margin-bottom: 39px;
+    &_inverse {
+      flex-direction: row-reverse;
+      .blocks {
+        &__title {
+          text-align: right;
+        }
+      }
+    }
+  }
+  &__text {
+    font-family: Proxima;
+    p {
+      line-height: 37px;
+      font-size: 21px;
+      margin-top: 15px;
+    }
+  }
+  &__title {
+    font-family: ProximaBold;
+    margin: 22px 0 0;
+    font-size: 24px;
+  }
+  &__image {
+    margin-left: 50px;
+    width: 290px; //TODO: remove
+    &_2 {
+      width: 425px; //TODO: remove
+    }
+    &_3 {
+      width: 305px; //TODO: remove
+    }
+  }
+}
+
+/*HELPER CLASSES*/
+
+.w-100 {
+  width: 100%;
+}
+
+.w-120 {
+  width: 120px;
+}
+
+.w-150 {
+  width: 150px;
+}
+
+.mr-20 {
+  margin-right: 20px!important;
+}
+
+/* HELPER CLASSES END*/
+
+
+/*IMG CLASSES*/
+
+.partners-image {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.img-hexagon {
+  max-width: 886px;
+  position: absolute;
+  z-index: 2;
+  top: 5%;
+  left: 0;
+  opacity: 0.7;
+}
+
+/*IMG CLASSES END*/
 
 @import 'footer';
