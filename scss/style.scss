@@ -179,7 +179,10 @@ a {
 .logo {
   width: 200px;
   height: 50px;
-  background: #ccc;
+
+  img {
+    width: 100%;
+  }
 }
 
 .btn {
@@ -210,8 +213,7 @@ a {
     padding: 4px 40px 4px 17px;
     position: relative;
     font-size: 20px;
-    top: 6px;
-    left: 12px;
+
     .btn {
       &__icon {
         width: 20px;
@@ -232,6 +234,37 @@ a {
 .section {
   margin-top: 130px;
   position: relative;
+  &_slider {
+    background-color: #EFF1F4;
+  }
+  &_services {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &_service {
+    padding: 0 20px;
+    text-align: center;
+    width: 33%;
+    margin-bottom: 100px;
+
+    h4 {
+      color: #74C26B;
+      font-family: ProximaBold, sans-serif;
+      font-size: 20px;
+      margin: 0;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 30px;
+      margin: 0;
+    }
+
+    img {
+      height: 110px;
+      margin-bottom: 25px;
+    }
+  }
   &_padding {
     padding-top: 144px;
     margin-top: 0;
@@ -240,10 +273,13 @@ a {
   &_half-grey {
     background: linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #f8f8f6 51%, #f8f8f6 100%);
   }
+  &_grey {
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #f8f8f6 51%, #f8f8f6 100%);
+  }
   &__heading {
     color: $color-royal;
     text-align: center;
-    font-size: 41px;
+    font-size: 40px;
     font-family: ProximaBold, sans-serif;
     margin-bottom: 15px;
     &_small {
@@ -257,7 +293,7 @@ a {
     font-weight: 400;
     margin-top: 10px;
     font-size: 21px;
-    line-height: 33px;
+    line-height: 40px;
     text-align: center;
     &_small {
       font-size: 18px;
@@ -349,9 +385,14 @@ a {
     }
   }
   &__title {
-    font-family: ProximaBold;
+    font-family: ProximaBold, sans-serif;
     margin: 22px 0 0;
     font-size: 24px;
+    line-height: 40px;
+
+    &.normal {
+      font-family: Proxima, sans-serif;
+    }
   }
   &__image {
     margin-left: 50px;
@@ -361,6 +402,26 @@ a {
     }
     &_3 {
       width: 305px; //TODO: remove
+    }
+  }
+  &__list {
+    margin-left: 20px;
+    margin-top: 15px;
+    p {
+      position: relative;
+      padding-left: 15px;
+      font-size: 18px;
+      margin: 0 0 10px;
+      line-height: 30px;
+      &:before {
+        content: '›';
+        color: #74C26B;
+        position: absolute;
+        left: 0;
+        top: 1px;
+        font-family: ProximaBold, sans-serif;
+        font-size: 21px;
+      }
     }
   }
 }
