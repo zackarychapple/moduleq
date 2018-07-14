@@ -63,6 +63,14 @@ gulp.task('watch', function () {
   gulp.watch(['js/*.js', 'js/libs/*.js'], ['js']);
 });
 
+gulp.task('build', function () {
+  gulp.src(['./*.html']).pipe(gulp.dest('./dist/'));
+  gulp.src(['./css/**']).pipe(gulp.dest('./dist/css'));
+  gulp.src(['./js/**']).pipe(gulp.dest('./dist/js'));
+  gulp.src(['./fonts/**']).pipe(gulp.dest('./dist/fonts'));
+  gulp.src(['./images/**']).pipe(gulp.dest('./dist/images'));
+});
+
 gulp.task('default', ['connect', 'watch']);
 
 

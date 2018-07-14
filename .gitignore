@@ -1,7 +1,10 @@
 /node_modules
 /css
+/dist
 .tmp
 .idea
 .vscode/user_data_dir
 ./index.html
+./product.html
+./business-information.html
 package-lock.json
