@@ -1,1 +1,3 @@
-console.log(1);
+$(document).ready(function(){
+  $('.j-slider').slick();
+});

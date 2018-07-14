@@ -1,0 +1,29 @@
+$color-grass: #74c26c;
+$color-royal: #3F4A8F;
+$color-indigo: #2D3975;
+$color-charcoal: #4B4B4B;
+$color-purple: #EFF1F4;
+$color-graymist: #E8E9EA;
+$color-iceberg: #F7F8F9;
+$color-jelly: #A81B8D;
+
+@mixin fonts($font-name, $font-url) {
+  @font-face {
+    font-family: '#{$font-name}';
+    src: url('../fonts/#{$font-url}.ttf') format('truetype');
+    font-style: normal;
+    @content
+  }
+}
+
+@include fonts(Proxima, ProximaNova-Reg){
+  font-weight: 400;
+}
+
+@include fonts(ProximaSbold, ProximaNova-Sbold){
+  font-weight: 600;
+}
+
+@include fonts(ProximaBold, ProximaNova-Bold){
+  font-weight: 800;
+}

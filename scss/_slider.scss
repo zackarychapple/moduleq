@@ -1,0 +1,39 @@
+.slider {
+  background: #f2f2f4;
+  .slick-list {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    font: 40px ProximaBold, sans-serif;
+    color: #3F4A8F;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .slick-arrow {
+    font-size: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 99px;
+    border: 2px solid #3F4A8F;
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    margin-top: -22px;
+  }
+  .slick-prev {
+    left: 0;
+    right: auto;
+  }
+  .slick-next {
+    left: auto;
+    right: 0;
+  }
+}
