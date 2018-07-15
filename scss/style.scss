@@ -87,6 +87,25 @@
   }
 }
 
+.list {
+  &__item {
+    font-size: 22px;
+    line-height: 30px;
+    padding-left: 15px;
+    position: relative;
+    margin-bottom: 15px;
+    &:before {
+      content: '›';
+      position: absolute;
+      left: 0;
+      top: -2px;
+      font-weight: 800;
+      color: $color-grass;
+      font-size: 20px;
+    }
+  }
+}
+
 .section {
   margin-top: 130px;
   position: relative;

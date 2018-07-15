@@ -1,1 +1,20 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200.5 147"><defs><style>.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{opacity:0.5;}.cls-4{fill:#f0f1f3;}.cls-5{clip-path:url(#clip-path-2);}.cls-6{fill:#74c26c;}</style><clipPath id="clip-path"><rect class="cls-1" width="1200.5" height="131.03"/></clipPath><clipPath id="clip-path-2"><rect class="cls-1" x="683.3" y="-51.2" width="519.7" height="141.09"/></clipPath></defs><title>MOD-Website-Components-R1</title><g class="cls-2"><g class="cls-3"><polyline class="cls-4" points="0.7 130.7 1203 2.8 1203 -628.6 0.7 -725"/></g><g class="cls-5"><polyline class="cls-6" points="702 55.9 731.4 64.3 1451.7 -10.8 1452.6 -22.7 702 55.9"/></g></g></svg>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200.5 147">
+  <defs>
+    <style>.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{opacity:0.5;}.cls-4{fill:#f0f1f3;}.cls-5{clip-path:url(#clip-path-2);}.cls-6{fill:#74c26c;}</style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" width="1200.5" height="131.03"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect class="cls-1" x="683.3" y="-51.2" width="519.7" height="141.09"/>
+    </clipPath>
+  </defs>
+  <title>MOD-Website-Components-R1</title>
+  <g class="cls-2">
+    <g class="cls-3">
+      <polyline class="cls-4" points="0.7 130.7 1203 2.8 1203 -628.6 0.7 -725"/>
+    </g>
+    <g class="cls-5">
+      <polyline class="cls-6" points="702 55.9 731.4 64.3 1451.7 -10.8 1452.6 -22.7 702 55.9"/>
+    </g>
+  </g>
+</svg>

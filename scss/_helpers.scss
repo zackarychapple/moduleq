@@ -1,3 +1,7 @@
+.hidden {
+  display: none;
+}
+
 .flex-grow-1 {
   flex-grow: 1;
 }
@@ -24,6 +28,10 @@
 
 .col-50 {
   width: 50%;
+}
+
+.p-relative {
+  position: relative;
 }
 
 .mr-20 {
@@ -104,4 +112,27 @@
     left: 0;
     background: url(../images/svg/MOD-Website-Components-R1_homepage-step1-icon.svg);
   }
+}
+
+.img-extenging {
+  position: absolute;
+  top: -100%;
+  right: 0;
+  width: 1000px;
+  z-index: -1;
+}
+
+.business-image {
+  margin: 50px 0;
+  img {
+    width: 100%;
+  }
+}
+
+.img-accessing {
+  position: absolute;
+  top: -366%;
+  right: -61%;
+  z-index: -1;
+  width: 1000px;
 }

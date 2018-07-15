@@ -1,7 +1,9 @@
+@import "variables";
+
 .slider {
-  background: #f2f2f4;
+  padding: 0 50px;
   .slick-list {
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
   }
   .slick-track {
@@ -12,27 +14,36 @@
     display: flex;
     align-items: center;
     font: 40px ProximaBold, sans-serif;
-    color: #3F4A8F;
+    color: $color-royal;
     text-align: center;
     margin-bottom: 15px;
   }
   .slick-arrow {
     font-size: 0;
-    width: 45px;
-    height: 45px;
-    border-radius: 99px;
-    border: 2px solid #3F4A8F;
+    width: 47px;
+    height: 47px;
+    border: none;
     background: transparent;
     position: absolute;
     top: 50%;
     cursor: pointer;
     margin-top: -22px;
+    transition: all .3s;
+    svg {
+      fill: $color-royal;
+    }
+    &:hover {
+      svg {
+        fill: darken($color-royal, 10%);
+      }
+    }
   }
-  .slick-prev {
+  .prev-arrow {
     left: 0;
     right: auto;
+    transform: rotate(180deg);
   }
-  .slick-next {
+  .next-arrow {
     left: auto;
     right: 0;
   }

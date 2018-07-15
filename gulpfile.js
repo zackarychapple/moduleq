@@ -32,7 +32,7 @@ gulp.task('scss', function () {
       browsers: ['last 2 versions'],
       cascade: false
     }))
-    .pipe(shorthand())
+    //.pipe(shorthand())
     //.pipe(minifyCSS())
     .pipe(gulp.dest('css/'))
     .pipe(connect.reload());
