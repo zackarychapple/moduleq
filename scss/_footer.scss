@@ -5,7 +5,7 @@
   }
 
   &__content {
-    padding: 130px 0 160px;
+    padding: 130px 0 60px;
     background-size: cover;
     background-position-x: 40%;
     background-repeat: no-repeat;
@@ -27,11 +27,50 @@
 
   &__info {
     font-size: 21px;
+
+    .col-25 {
+      padding-right: 20px;
+    }
+
+    &-title {
+      margin: 0;
+      line-height: 1.05;
+    }
+
+    .divider {
+      height: 3px;
+      display: block;
+      margin: .66em 0 1em;
+      width: 100%;
+      max-width: 30px;
+      background-color: rgba(255,255,255,0.3);
+    }
+
+    &-content {
+      p {
+        font-size: 16px;
+        margin: 0;
+        padding: 10px 0;
+
+        text-align: left;
+
+        border-top: 1px solid #ececec;
+        border-color: rgba(255,255,255,0.08);
+
+        &:first-child {
+          border-top: 0;
+        }
+      }
+
+      a {
+        color: #fff;
+      }
+    }
   }
 
   &__copyright {
     padding: 35px 0;
-    background-color: #2d3975;
+    background-color: $color-indigo;
 
     p {
       padding: 0;

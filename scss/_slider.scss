@@ -13,10 +13,24 @@
   &__item {
     display: flex;
     align-items: center;
-    font: 40px ProximaBold, sans-serif;
     color: $color-royal;
     text-align: center;
     margin-bottom: 15px;
+
+    blockquote {
+      font: 36px Proxima, sans-serif;
+      line-height: 48px;
+      margin: 0 0 15px;
+    }
+
+    span {
+      font: 18px Proxima, sans-serif;
+      color: $color-charcoal;
+    }
+
+    p {
+      font: 40px ProximaBold, sans-serif;
+    }
   }
   .slick-arrow {
     font-size: 0;

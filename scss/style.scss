@@ -80,10 +80,9 @@
   &__icon {
     position: absolute;
     right: 11px;
-    top: 9px;
+    top: 8px;
     width: 11px;
     height: 11px;
-    background: red;
   }
 }
 
@@ -123,7 +122,7 @@
     margin-bottom: 100px;
 
     h4 {
-      color: #74C26B;
+      color: $color-grass;
       font-family: ProximaBold, sans-serif;
       font-size: 20px;
       margin: 0;
@@ -292,7 +291,7 @@
       line-height: 30px;
       &:before {
         content: '›';
-        color: #74C26B;
+        color: $color-grass;
         position: absolute;
         left: 0;
         top: 1px;

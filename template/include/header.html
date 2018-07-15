@@ -1,17 +1,24 @@
-<div class="header__outer">
+  @@if (onlyMenu === false) {
+  <div class="header__outer">
+
   <div class="header__image">
     <img src="@@image" alt="">
   </div>
-  <div class="header__inner">
+    <div class="header__inner">
+    }
+  @@if (onlyMenu === true) {
+      <div class="header__outer extra-padding">
+      <div class="header__inner without-bg">
+  }
     <div class="container">
       <div class="header__btn">
-        <button class="btn">
+        <a class="btn fancybox" href="https://www.youtube.com/embed/BG6t8GKpETE?autoplay=1">
           <span class="btn__text">how moduleq works</span>
-          <i class="btn__icon"></i>
-        </button>
+          <img class="btn__icon" src="/images/svg/play.svg" alt="">
+        </a>
       </div>
       <div class="header__menu-wrapper">
-        <a href="/index.html" class="logo"><img src="./images/svg/logo.svg" alt=""></a>
+        <a href="/index.html" class="logo"><img src="/images/svg/logo.svg" alt=""></a>
         <div class="header__menu">
           <ul class="menu">
             <li class="menu__item">
@@ -27,18 +34,19 @@
               <a href="#" class="menu__link">Company</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Contact</a>
+              <a href="mailto:info@moduleq.com?subject=ModuleQ inquiry" class="menu__link">Contact</a>
             </li>
           </ul>
         </div>
       </div>
+      @@if (onlyMenu === false) {
       <div class="header__grid">
         <div class="header__column flex-grow-1">
           <h1 class="h1">@@title</h1>
           <h3 class="h3">@@description</h3>
           <button class="btn btn_purple btn_xl">
             <span class="btn__text">@@btnTest</span>
-            <i class="btn__icon"></i>
+            <img class="btn__icon" src="/images/svg/play-circle.svg" alt="">
           </button>
         </div>
         <div class="header__column">
@@ -49,6 +57,7 @@
           }
         </div>
       </div>
+      }
     </div>
   </div>
 </div>

@@ -26,6 +26,11 @@
   margin-top: 35px;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .col-50 {
   width: 50%;
 }
@@ -34,8 +39,12 @@
   position: relative;
 }
 
+.col-25 {
+  width: 25%;
+}
+
 .mr-20 {
-  margin-right: 20px!important;
+  margin-right: 20px !important;
 }
 
 .text-center {
