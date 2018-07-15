@@ -34,6 +34,10 @@
   margin-top: 60px;
 }
 
+.m-0 {
+  margin: 0;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -49,6 +53,10 @@
 
 .p-relative {
   position: relative;
+}
+
+.col-33 {
+  width: 33.33%;
 }
 
 .col-25 {
@@ -143,7 +151,7 @@
     position: absolute;
     top: -50%;
     left: 0;
-    background: url(../images/svg/MOD-Website-Components-R1_homepage-step1-icon.svg);
+    background: url(/images/svg/MOD-Website-Components-R1_homepage-step1-icon.svg);
   }
 }
 
