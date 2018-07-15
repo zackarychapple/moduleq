@@ -33,6 +33,20 @@ p {
   }
   &__link {
     color: #fff;
+    &_active {
+      &:before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        margin-top: 3px;
+        height: 6px;
+        width: 25px;
+        background: url('/images/svg/MOD-Website-Components-R1_3dots.svg') no-repeat;
+      }
+    }
+    &:hover {
+      opacity: .8;
+    }
   }
 }
 
@@ -50,13 +64,13 @@ p {
   border-radius: 20px;
   background: $color-grass;
   color: #fff;
+  font-family: ProximaSbold, sans-serif;
   cursor: pointer;
   font-size: 15px;
   text-transform: uppercase;
-  line-height: 27px;
+  line-height: 26px;
   position: relative;
-  letter-spacing: -1px;
-  padding: 0 31px 0 13px;
+  padding: 0 28px 0 13px;
   word-spacing: 3px;
   &:hover {
     background: darken($color-grass, 10%);
@@ -92,7 +106,7 @@ p {
 
 .list {
   &__item {
-    font-size: 22px;
+    font-size: 21px;
     line-height: 30px;
     padding-left: 15px;
     position: relative;
@@ -195,7 +209,15 @@ p {
     position: relative;
     line-height: 34px;
     margin: 0 auto 30px;
-
+    &:before {
+      content: '';
+      position: absolute;
+      top: 100%;
+      margin-top: 3px;
+      height: 6px;
+      width: 25px;
+      background: url('/images/svg/MOD-Website-Components-R1_3dots.svg') no-repeat;
+    }
     &:after {
       position: absolute;
       content: '';

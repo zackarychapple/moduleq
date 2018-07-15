@@ -22,16 +22,36 @@
         <div class="header__menu">
           <ul class="menu">
             <li class="menu__item">
+              @@if (activeMenu === 'product') {
+                <a href="/product.html" class="menu__link menu__link_active">Product</a>
+              }
+              @@if (activeMenu !== 'product') {
               <a href="/product.html" class="menu__link">Product</a>
+              }
             </li>
             <li class="menu__item">
-              <a href="/business-information.html" class="menu__link">Business Information Providers</a>
+              @@if (activeMenu === 'business') {
+                <a href="/business-information.html" class="menu__link menu__link_active">Business Information Providers</a>
+              }
+              @@if (activeMenu !== 'business') {
+                <a href="/business-information.html" class="menu__link">Business Information Providers</a>
+              }
             </li>
             <li class="menu__item">
-              <a href="/q-for-teams.html" class="menu__link">Q For Teams</a>
+              @@if (activeMenu === 'team') {
+                <a href="/q-for-teams.html" class="menu__link menu__link_active">Q For Teams</a>
+              }
+              @@if (activeMenu !== 'team') {
+                <a href="/q-for-teams.html" class="menu__link">Q For Teams</a>
+              }
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Company</a>
+              @@if (activeMenu === 'company') {
+                <a href="#" class="menu__link menu__link_active">Company</a>
+              }
+              @@if (activeMenu !== 'company') {
+                <a href="#" class="menu__link">Company</a>
+              }
             </li>
             <li class="menu__item">
               <a href="mailto:info@moduleq.com?subject=ModuleQ inquiry" class="menu__link">Contact</a>

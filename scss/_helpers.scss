@@ -22,8 +22,16 @@
   width: 370px;
 }
 
+.w-240 {
+  width: 240px;
+}
+
 .mt {
   margin-top: 35px;
+}
+
+.mt-60 {
+  margin-top: 60px;
 }
 
 .row {
@@ -160,4 +168,17 @@
   right: -61%;
   z-index: -1;
   width: 1000px;
+}
+
+.img-refine {
+  width: 150px;
+  position: absolute;
+  bottom: calc(100% + 30px);
+  right: 2%;
+}
+
+.img-future {
+  position: relative;
+  top: -25px;
+  left: -25px;
 }
