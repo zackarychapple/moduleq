@@ -42,6 +42,9 @@ a {
   @media (max-width: 1200px) {
     padding: 0 75px;
   }
+  @media (max-width: 1100px) {
+    padding: 0 50px;
+  }
   &_z-index {
     z-index: 5;
     position: relative;
@@ -53,8 +56,11 @@ a {
   font-size: 70px;
   margin: 10px 0;
   font-family: sans-serif;
-  @media (max-width: 1200px) {
+  @media (max-width: 1300px) {
     font-size: 62px;
+  }
+  @media (max-width: 1100px) {
+    font-size: 56px;
   }
 }
 
@@ -66,5 +72,9 @@ a {
   @media (max-width: 1200px) {
     font-size: 22px;
     line-height: 36px;
+  }
+  @media (max-width: 1100px) {
+    font-size: 21px;
+    line-height:32px;
   }
 }
