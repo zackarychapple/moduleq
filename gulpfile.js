@@ -71,7 +71,7 @@ gulp.task('build', function () {
   gulp.src(['./images/**']).pipe(gulp.dest('./dist/images'));
 });
 
-gulp.task('default', ['connect', 'watch']);
+gulp.task('default', ['include', 'connect', 'watch']);
 
 
 

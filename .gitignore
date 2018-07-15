@@ -4,8 +4,11 @@
 .tmp
 .idea
 .vscode/user_data_dir
-./index.html
-./product.html
-./business-information.html
-./q-for-teams.html
+/index.html
+/product.html
+/business-information.html
+/company-about.html
+/q-for-teams.html
+/privacy.html
+/terms.html
 package-lock.json
