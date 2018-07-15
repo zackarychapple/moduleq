@@ -116,6 +116,10 @@ p {
   > .bottom_slider_image {
     width: 100%;
   }
+  > .bottom_slider_image {
+    position: relative;
+    top: -2px;
+  }
   &_slider_wrapper {
     background-color: #EFF1F4;
   }
@@ -277,6 +281,8 @@ p {
 
     &.normal {
       font-family: Proxima, sans-serif;
+      font-weight: 400;
+      text-transform: none;
     }
   }
   &__image {
