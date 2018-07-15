@@ -65,7 +65,15 @@
           <h1 class="h1">@@title</h1>
           <h3 class="h3">@@description</h3>
           <button class="btn btn_purple btn_xl">
-            <span class="btn__text">@@btnTest</span>
+            @@if (btnTest === 'find out how') {
+              <span class="btn__text"><a href="mailto:info@moduleq.com?subject=Find out how">@@btnTest</a></span>
+            }
+            @@if (btnTest === 'Set Up Demo') {
+              <span class="btn__text"><a href="mailto:info@moduleq.com?subject=Set Up Demo">@@btnTest</a></span>
+            }
+            @@if (btnTest === 'watch the video') {
+              <span class="btn__text"><a class="fancybox" href="https://www.youtube.com/embed/BG6t8GKpETE?autoplay=1">@@btnTest</a></span>
+            }
             <img class="btn__icon" src="/images/svg/play-circle.svg" alt="">
           </button>
         </div>
