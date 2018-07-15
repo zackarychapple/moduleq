@@ -212,10 +212,10 @@ p {
     &:before {
       content: '';
       position: absolute;
-      top: 100%;
-      margin-top: 3px;
-      height: 6px;
-      width: 25px;
+      bottom: 100%;
+      margin-bottom: 10px;
+      height: 10px;
+      width: 35px;
       background: url('/images/svg/MOD-Website-Components-R1_3dots.svg') no-repeat;
     }
     &:after {
