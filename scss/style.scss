@@ -296,11 +296,13 @@ p {
       }
     }
     &__name {
+      text-transform: capitalize;
       margin: 10px 0 0;
       text-align: center;
       font-size: 18px;
     }
     &__position {
+      text-transform: uppercase;
       text-align: center;
       opacity: .7;
       font-size: 16px;
